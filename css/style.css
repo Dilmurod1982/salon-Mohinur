@@ -1,0 +1,136 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v13-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+*:focus {
+    outline: 2px dotted #C4F82A;
+    outline-offset: 4px ;
+}
+
+img {
+    object-fit: cover;
+
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 24px;
+}
+
+.user-card {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 12px;
+}
+.user-card__image {
+    border-radius: 50%;
+}
+.user-card__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+.user-card__location {
+    font-weight: 700;
+    text-align: center;
+}
+
+.user-card__location a {
+    color: #C4F82A;
+}
+.user-card__job {
+    font-weight: 400;
+    text-align: center;
+    
+}
+.user-card__social {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+/* .user-card__social-item {
+    
+} */
+.user-card__social-link {
+    color: white;
+    width: 100%;
+    background-color: #333333;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+
+ 
+}
+
+.user-card__social-link:active {
+    opacity: 0.8;
+}
+
+.user-card__social-link:hover {
+    background-color: #C4F82A;
+    color: #333333;
+}
+
+@media (max-width: 375px) {
+    .user-card {
+        padding: 24px;
+    }
+    
+}
